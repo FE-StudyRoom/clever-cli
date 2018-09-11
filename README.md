@@ -3,7 +3,7 @@
 ## A simple CLI for Create/General Project
 
 <!-- badges section. -->
-
+[![Build Status](https://travis-ci.org/FE-StudyRoom/clever-cli.svg?branch=master)](https://travis-ci.org/FE-StudyRoom/clever-cli)
 
 ## Feature（特征）
 

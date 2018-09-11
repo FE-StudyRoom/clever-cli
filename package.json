@@ -1,13 +1,10 @@
 {
   "name": "fe-clever-cli",
-  "version": "0.0.2",
+  "version": "0.0.6",
   "description": "Set up templates based on your configuration, and build projects based on your template.",
   "main": "index.js",
   "bin": {
     "fec": "./bin/clever"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "template",
@@ -26,6 +23,7 @@
     "download-git-repo": "^1.1.0",
     "fs-extra": "^7.0.0",
     "inquirer": "^6.2.0",
+    "ora": "^3.0.0",
     "shelljs": "^0.8.2"
   }
 }
