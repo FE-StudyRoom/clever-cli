@@ -1,6 +1,6 @@
 {
-  "name": "FEClever-cli",
-  "version": "0.0.1",
+  "name": "fe-clever-cli",
+  "version": "0.0.2",
   "description": "Set up templates based on your configuration, and build projects based on your template.",
   "main": "index.js",
   "bin": {
@@ -14,7 +14,7 @@
     "generate",
     "cli"
   ],
-  "author": "samli9009 <liminshen159999@163.com>",
+  "author": "samli9009 <liminshen.sam@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
