@@ -1,0 +1,27 @@
+{
+  "name": "clever-cli",
+  "version": "0.0.1",
+  "description": "Set up templates based on your configuration, and build projects based on your template.",
+  "main": "index.js",
+  "bin": {
+    "gc": "./bin/clever"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "template",
+    "generate",
+    "cli"
+  ],
+  "author": "sam.li",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "commander": "^2.18.0",
+    "download-git-repo": "^1.1.0",
+    "fs-extra": "^7.0.0",
+    "inquirer": "^6.2.0",
+    "shelljs": "^0.8.2"
+  }
+}
