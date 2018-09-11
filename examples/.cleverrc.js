@@ -18,7 +18,7 @@ module.exports = {
     },
     routes: {},
     view: {
-      tpl: './templates/demo',
+      tpl: './templates/view',
       defaultDest: '/project'
     }
   }
