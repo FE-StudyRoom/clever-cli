@@ -1,6 +1,6 @@
 {
   "name": "fe-clever-cli",
-  "version": "0.0.6",
+  "version": "0.0.8",
   "description": "Set up templates based on your configuration, and build projects based on your template.",
   "main": "index.js",
   "bin": {

@@ -50,15 +50,15 @@ module.exports = {
 ### New a project form your config
 
 ```bash
-$ clever new // will download your .cleverrc.js origin/branch template
-$ clever new --no-auto-install // not auto install dependencies
+$ fec new // will download your .cleverrc.js origin/branch template
+$ fec new --no-auto-install // not auto install dependencies
 ```
 
 ## Generate
 
 ```bash
 $ cd your application
-$ clever g
+$ fec g
 ```
 
 ## CHANGELOG
