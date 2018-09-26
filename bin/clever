@@ -4,20 +4,23 @@ const chalk = require('chalk');
 const pkg = require('../package.json');
 const utils = require('../utils/index.js');
 
-// const newCli = require('../lib/new');
 const generateCli = require('../lib/generate');
+const newCli = require('../lib/new');
 // const prettierCli = require('../lib/prettier');
-
+var config;
+utils.getConfig(function(conf) {
+  config = conf;
+})
 program.version(pkg.version)
-  .option('init', '`pro init` is deprecated, please use `pro new`')
-  .option('new', 'new a Ant Design Pro project.')
-  .option('new --no-auto-install', 'new a Ant Design Pro project.')
-  .option('generate g', 'generate template')
-  .option('prettier', 'format code by prettier eslint')
-  .option('n', 'new a Ant Design Pro project.')
-  .option('n --no-auto-install', 'new a Ant Design Pro project.')
-  .option('-p', 'format code by prettier eslint')
-  .parse(process.argv);
+    .option('init', '`pro init` is deprecated, please use `pro new`')
+    .option('new', 'new a Ant Design Pro project.')
+    .option('new --no-auto-install', 'new a Ant Design Pro project.')
+    .option('generate g', 'generate template')
+    .option('prettier', 'format code by prettier eslint')
+    .option('n', 'new a Ant Design Pro project.')
+    .option('n --no-auto-install', 'new a Ant Design Pro project.')
+    .option('-p', 'format code by prettier eslint')
+    .parse(process.argv);
 
 
 if (program.init) {
@@ -25,12 +28,11 @@ if (program.init) {
 }
 
 if (program.new || program.n) {
-  newCli(process.argv);
+  newCli(process.argv,config);
 }
 
 if (program.generate || program.g) {
-  console.log()
-  generateCli(process.argv);
+  generateCli(process.argv,config);
 }
 
 if (program.prettier || program.p) {
